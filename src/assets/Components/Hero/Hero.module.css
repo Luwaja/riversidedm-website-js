@@ -1,0 +1,99 @@
+.heroContainer {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+}
+
+.backgroundContainer {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  background-image: url(../../Images/WaterImage.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.contentContainer {
+
+}
+
+.h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 100%;
+
+  color: #FFFFFF;
+}
+
+.flow {
+  background: linear-gradient(94.61deg, #a1fed4 -6.23%, #5CEAA9 102.68%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline; /* Ensures the span does not break the line */
+}
+
+.p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 100%;
+
+  color: #FFFFFF;
+}
+
+.buttonContainer {
+
+}
+
+.contactButton {
+  width: 300px;
+  height: 70px;
+
+  background: #5CEAA9;
+  box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.8);
+  border-radius: 25px;
+  border: none;
+
+  /* Text */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+
+  color: #26323B;
+}
+
+.contactButton:hover {
+  filter: brightness(115%);
+}
+
+.servicesButton {
+  width: 300px;
+  height: 70px;
+
+  background: linear-gradient(94.61deg, #2B6F7E -6.23%, #245A66 102.68%);
+  box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.8);
+  border-radius: 25px;
+  border: none;
+
+  /* Text */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+
+  color: #FFFFFF;
+}
+
+.servicesButton:hover {
+  filter: brightness(115%);
+}
+
+.servicesButton_clicked {
+  background: #235b68;
+}
+
+@media screen and (min width: )

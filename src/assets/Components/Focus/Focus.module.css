@@ -1,0 +1,152 @@
+.background {
+  position: absolute;
+  width: 100%;
+  height: 921.13px;
+  top: 1761px;
+}
+
+/*-----------------Who-----------------*/
+.whoContainer {
+  position: absolute;
+  width: 691.67px;
+  height: 276px;
+  left: 162.16px;
+  top: 1950px;
+}
+
+.whoTitle {
+  position: absolute;
+  height: 77px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+
+  color: #FFFFFF;
+}
+
+.whoDescription {
+  position: absolute;
+  width: 681.67px;
+  height: 167px;
+  top: 150px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+
+  color: #FFFFFF;
+}
+
+.whoLine {
+  position: absolute;
+  width: 370.36px;
+  height: 0px;
+  left: 12px;
+  top: 130px;
+
+  border: 3px solid #FFFFFF;
+}
+
+.whoButton {
+  position: absolute;
+  width: 184px;
+  height: 55px;
+  top: 430px;
+
+  background: #5CEAA9;
+  border-radius: 14px;
+  border: none;
+
+  /*Text*/
+  font-family: 'Inter';
+  font-style: bold;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 24px;
+
+  color: #295461;
+}
+
+/*-----------------What-----------------*/
+.whatContainer {
+  position: absolute;
+  width: 667.65px;
+  height: 275px;
+  left: 1220.19px;
+  top: 1950px;
+}
+
+.whatTitle {
+  position: absolute;
+  height: 83.26px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+
+  color: #FFFFFF;
+}
+
+.whatDescription {
+  position: absolute;
+  width: 656.64px;
+  height: 166px;
+  top: 150px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+
+  color: #FFFFFF;
+}
+
+.whatLine {
+  position: absolute;
+  width: 368.36px;
+  height: 0px;
+  left: 12px;
+  top: 130px;
+
+  border: 3px solid #FFFFFF;
+}
+
+.whatButton {
+  position: absolute;
+  width: 184px;
+  height: 55px;
+  top: 430px;
+
+  background: #5CEAA9;
+  border-radius: 14px;
+  border: none;
+
+  /*Text*/
+  font-family: 'Inter';
+  font-style: bold;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 24px;
+
+  color: #295461;
+}
+
+.middleLine {
+  position: absolute;
+  width: 432px;
+  height: 0px;
+  left: 806px;
+  top: 2220px;
+
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  transform: rotate(90deg);
+}

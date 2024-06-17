@@ -1,0 +1,71 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  padding: 30px;
+}
+
+li a {
+  text-decoration: none;
+  color: #C9C9C9;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 35px;
+}
+
+li a:hover {
+  filter: brightness(200%);
+  cursor: pointer;
+}
+
+li a:active {
+  filter: brightness(200%);
+}
+
+.background {
+  width: 100%;
+  height: 60px;
+  z-index: 1;
+
+  background: #26323B;
+}
+
+.navLogo {
+  height: 45px;
+}
+
+.active {
+  filter: brightness(200%);
+}
+
+.services_arrow {
+  height: 11px;
+}
+
+.contactButton {
+  width: 140px;
+  height: 40px;
+
+  background: #5CEAA9;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.97);
+  border-radius: 12px;
+  border: none;
+
+  /*Text*/
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 20px;
+
+  color: #26323B;
+}
+
+.contactButton:hover {
+  filter: brightness(115%);
+}

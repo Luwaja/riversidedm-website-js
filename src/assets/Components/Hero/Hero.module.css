@@ -2,29 +2,26 @@
   position: relative;
   width: 100%;
   height: 90vh;
+  overflow: hidden;
 }
 
 .backgroundContainer {
   position: relative;
+  margin-top: -1px;
   width: 100%;
-  height: 90%;
+  height: 90vh;
   background-image: url(../../Images/WaterImage.png);
   background-size: cover;
   background-position: bottom;
 }
 
-.contentContainer {
-
+.h1 {
+  font-size: 80px;
+  font-weight: 800;
 }
 
-.h1 {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 80px;
-  line-height: 100%;
-
-  color: #FFFFFF;
+.p {
+  font-size: 28px;
 }
 
 .flow {
@@ -35,22 +32,8 @@
   display: inline; /* Ensures the span does not break the line */
 }
 
-.p {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 100%;
-
-  color: #FFFFFF;
-}
-
-.buttonContainer {
-
-}
-
 .contactButton {
-  width: 300px;
+  width: 350px;
   height: 70px;
 
   background: #5CEAA9;
@@ -58,10 +41,8 @@
   border-radius: 25px;
   border: none;
 
-  /* Text */
-  font-family: 'Inter';
-  font-style: normal;
   font-weight: 800;
+  font-size: 35px;
 
   color: #26323B;
 }
@@ -71,7 +52,7 @@
 }
 
 .servicesButton {
-  width: 300px;
+  width: 350px;
   height: 70px;
 
   background: linear-gradient(94.61deg, #2B6F7E -6.23%, #245A66 102.68%);
@@ -79,11 +60,8 @@
   border-radius: 25px;
   border: none;
 
-  /* Text */
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 40px;
+  font-weight: 700;
+  font-size: 35px;
 
   color: #FFFFFF;
 }
@@ -96,4 +74,37 @@
   background: #235b68;
 }
 
-@media screen and (min width: )
+/*Mobile Screen*/
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .h1 {
+    font-size: 70px;
+  }
+  
+  .p {
+    font-size: 24px;
+  }
+
+  .contactButton, .servicesButton {
+    height: 60px;
+    border-radius: 16px;
+    font-size: 30px;
+  }
+}
+
+/*Tablet Screen*/
+@media screen and (max-width: 576px) {
+  .h1 {
+    font-size: 60px;
+  }
+
+  .p {
+    font-size: 18px;
+  }
+
+  .contactButton, .servicesButton {
+    height: 50px;
+    width: 220px;
+    border-radius: 16px;
+    font-size: 22px;
+  }
+}

@@ -1,138 +1,29 @@
 .servicesContainer {
-  position: absolute;
-  width: 1798px;
-  height: 582px;
-  left: calc(50% - 1798px/2);
-  top: 1030px;
+  margin-top: 50px;
+  margin-bottom: 150px;
 }
 
-/*-----------Cards-----------*/
+h1 {
+  color: #2b6f7e;
+  font-size: 60px;
+  font-weight: 800;
+}
+
 .cardContainer {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-  width: auto;
-  left: 180px;
-}
-
-.centerCard,
-.leftCard,
-.rightCard {
-  width: 400px;
-  height: 500px;
-  filter: drop-shadow(23px 20px 18px rgba(0, 0, 0, 0.25));
-  opacity: 1; /* Full opacity by default */
-}
-
-.leftCard,
-.rightCard {
-  opacity: 0.7; /* Reduced opacity for non-center cards */
-}
-
-.icon {
-  position: absolute;
-  width: 270px;
-  height: 270px;
-  left: 80px;
-  top: 10px;
-}
-
-.titleText {
-  position: absolute;
-  width: 328px;
-  height: 72px;
-  left: 30px;
-  top: 260px;
-
-  font-family: 'Inter';
-  font-style: bold;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-
-  color: #FFFFFF;
-}
-
-.descriptionText {
-  position: absolute;
-  width: 272px;
-  height: 37px;
-  left: 30px;
-  top: 380px;
-
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-
-  color: #FFFFFF;
-}
-
-.learnMoreButton { 
-  position: absolute;
-  width: 153px;
-  height: 46px;
-  left: 30px;
-  top: 450px;
-
-  background: #5CEAA9;
-  border-radius: 14px;
-  border: none;
-
-  /*Text*/
-  font-family: 'Inter';
-  font-style: bold;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-
-  color: #295461;
+  display: flex !important;
+  justify-content: center !important;
 }
 
 /*-----------Circles-----------*/
 .circleContainer {
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 280px;
-  height: 41px;
-  left: 765px;
-  top: 600px;
+
 }
 
-.circleOne,
-.circleTwo,
-.circleFour,
-.circleFive {
-  width: 35px;
-  height: 35px;
-  box-sizing: border-box;
+.circleContainer img {
+  scale: 0.6;
+  padding: 0 5px;
 }
 
-.circleThree {
-  /*Center Bigger Circle*/
-  width: 50px;
-  height: 50px;
-  box-sizing: border-box;
-}
+.arrow {
 
-/*-----------Arrows-----------*/
-.leftArrow {
-  position: absolute;
-  width: 90px;
-  height: 90px;
-  top: 200px;
-  left: 0;
-}
-
-.rightArrow {
-  position: absolute;
-  width: 90px;
-  height: 90px;
-  top: 200px;
-  left: 1700px;
 }

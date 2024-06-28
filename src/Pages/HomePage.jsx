@@ -8,8 +8,8 @@ const Landing = () => {
   return (
     <div>
       <Hero/>
-      {/* <Services/>
-      <Focus/> */}
+      <Services/>
+      <Focus/>
     </div>
   )
 }

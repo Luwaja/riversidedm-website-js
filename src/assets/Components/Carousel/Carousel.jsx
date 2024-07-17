@@ -1,14 +1,12 @@
 import React from 'react'
-import servicesStyles from "./Services.module.css"
-import "./Services.css"
-import CardBackground from "../../Images/CardBackground.svg"
+import carouselStyles from "./Carousel.module.css"
+import "./Carousel.css"
 import WebDDIcon from "../../Images/Icons/WebDDIcon.svg"
 import SEOIcon from "../../Images/Icons/SEOIcon.svg"
 import SMMIcon from "../../Images/Icons/SMMIcon.svg"
 import CCIcon from "../../Images/Icons/CCIcon.svg"
 import OAIcon from "../../Images/Icons/OAIcon.svg"
 import FullCircle from "../../Images/FullCircle.svg"
-import HollowCircle from "../../Images/HollowCircle.svg"
 import LeftArrow from "../../Images/LeftCircleArrow.svg"
 import RightArrow from "../../Images/RightCircleArrow.svg"
 import Card from "../Card/Card"
@@ -42,9 +40,9 @@ const PrevArrow = (props) => {
   )
 }
 
-const Services = () => {
+const Carousel = () => {
   
-  const settings = {
+  var settings = {
     className: "center",
     centerMode: true,
     initialSlide: 2,
@@ -58,12 +56,8 @@ const Services = () => {
     nextArrow: <NextArrow/>,
     prevArrow: <PrevArrow/>,
     appendDots: dots => (
-      <div
-        style={{
-          marginBottom: "-40px",
-        }}
-      >
-        <ul style={{ margin: "0px" }} className="custom-dots"> {dots} </ul>
+      <div style={{ marginBottom: "-40px" }}>
+        <ul style={{ margin: "0px"}} className="custom-dots"> {dots} </ul>
       </div>
     ),
     customPaging: i => (
@@ -72,49 +66,57 @@ const Services = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          width: '40px',
-          height: '40px'
+          width: '30px',
+          height: '30px'
         }}
       >
         <img src={FullCircle} alt={`dot-${i}`}/>
       </div>
-    )
+    ),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   }
 
   
   return (
-    <div className={[servicesStyles.servicesContainer,"flex-column d-flex justify-content-center align-items-center"].join(" ")}>
+    <div className={[carouselStyles.carouselContainer,"flex-column d-flex justify-content-center align-items-center"].join(" ")}>
         <h1 className="pb-1">Services</h1>
-        <Slider {...settings} className={[servicesStyles.cardsContainer,"col-lg-8 d-flex justify-content-center align-items-center"].join(" ")}>
-          <div className={servicesStyles.cardContainer}>
+        <Slider {...settings} className={[carouselStyles.cardsContainer,"col-lg-10 d-flex justify-content-center align-items-center"].join(" ")}>
+          <div className={carouselStyles.cardContainer}>
             <Card
               cardImage={CCIcon}
               title="Content Creation"
               description="Create valuable content that showcases your expertise."
             />
           </div>
-          <div className={servicesStyles.cardContainer}>
+          <div className={carouselStyles.cardContainer}>
             <Card
               cardImage={SEOIcon}
               title="Search Engine Optimization (SEO)"
               description="Enhance your website's prominence on search engines."
             />
           </div>
-          <div className={servicesStyles.cardContainer}>
+          <div className={carouselStyles.cardContainer}>
             <Card
               cardImage={WebDDIcon}
               title="Website Development and Design"
               description="Develop and design a professional, user-friendly website."
             />
           </div>
-          <div className={servicesStyles.cardContainer}>
+          <div className={carouselStyles.cardContainer}>
             <Card
               cardImage={SMMIcon}
               title="Social Media Management"
               description="Engage with your audience and establish an online presence."
             />
           </div>
-          <div className={servicesStyles.cardContainer}>
+          <div className={carouselStyles.cardContainer}>
             <Card
               cardImage={OAIcon}
               title="Online Advertising"
@@ -126,4 +128,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default Carousel

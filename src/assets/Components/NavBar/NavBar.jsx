@@ -46,12 +46,6 @@ const NavBar = () => {
         </div>
         <ul className={[navbarStyles.menuItemsContainer, "col-6 d-lg-flex justify-content-lg-center mx-lg-5 d-none"].join(" ")}>
           <li>
-            <a href="#About"
-              className={activeLink === "#About" ? navbarStyles.active : ""}
-              onClick={() => handleLinkClick("#About")}>
-                About</a>
-          </li>
-          <li>
             <div 
               className={navbarStyles.servicesContainer}
               onMouseEnter={handleMouseEnter}
@@ -81,7 +75,7 @@ const NavBar = () => {
           </li>
         </ul>
         <div className="col-3 d-lg-flex justify-content-lg-start me-2 d-none">
-          <button type="button" className={navbarStyles.contactButton}>Contact</button>
+          <button type="button" className={navbarStyles.contactButton}>Contact Us</button>
         </div>
         <div data-id="MobileContactButton" className="d-flex d-lg-none justify-content-end col-3">
           <button type="button" className={[navbarStyles.mobileButton, "d-flex justify-content-center align-items-center"].join(" ")}>

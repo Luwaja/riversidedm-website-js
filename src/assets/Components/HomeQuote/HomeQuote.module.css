@@ -1,0 +1,26 @@
+.container {
+  margin: 50px 0;
+  background-color: #26323B;
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  color: white;
+  font-size: 26px;
+  font-weight: 500;
+  padding: 40px 0px;
+  text-align: center;
+}
+
+.quotes {
+  margin-bottom: 50px;
+  color: #7EF9C1; 
+  scale: 2;
+}
+
+.source {
+  font-weight: 400;
+  margin-top: 40px;
+  opacity: 80%;
+}

@@ -73,37 +73,45 @@ li a:hover {
   height: 40px;
   z-index: 2;
 
-  background: #5CEAA9;
+  background: none;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.97);
   border-radius: 12px;
-  border: none;
+  border: solid 3px #5CEAA9;
 
   /*Text*/
   font-family: 'Inter';
-  font-weight: 700;
+  font-weight: 600;
   font-size: 20px;
 
-  color: #26323B;
+  color: #5CEAA9;
+
+  transition: color 0.3s, background 0.3s;
 }
 
 .contactButton:hover {
-  filter: brightness(115%);
+  background: #5CEAA9;
+  color: #26323B;
 }
 
 .mobileButton {
-  background: #5CEAA9;
+  background: none;
   width: 80px;
   height: 35px;
-  border: none;
+  border: solid 3px #5CEAA9;
   border-radius: 10px;
 }
 
 .mobileButton:hover {
-  filter: brightness(115%);
+  background: #5CEAA9;
+  color: #26323B;
+
+  .hiMail {
+    color: #26323B;
+  }
 }
 
 .hiMail {
-  color: #26323B;
+  color: #5CEAA9;
   scale: 1.5;
 }
 

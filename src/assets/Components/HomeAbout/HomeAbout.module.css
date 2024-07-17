@@ -1,0 +1,58 @@
+.container {
+
+}
+
+.aboutUs {
+  color: #2B6F7E;
+  font-weight: 800;
+}
+
+.backBox {
+  background: #26323B;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+}
+
+.frontBox {
+  background: #2B6F7E;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxIcon {
+  color: #59E1A5;
+  scale: 5;
+  display: flex;
+  align-items: center;
+}
+
+.ourTitle {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.ourDescription {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.button {
+  background-color: #2B6F7E;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: filter 0.25s;
+}
+
+.button:hover {
+  filter: brightness(115%);
+}

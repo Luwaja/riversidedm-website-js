@@ -7,10 +7,10 @@ const Card = (props) => {
         <div data-id="IconContainer" className={[cardStyles.iconContainer, "row d-flex justify-content-center"].join(" ")}>
           <img src={props.cardImage} className={[cardStyles.icon, ""].join(" ")} alt="CardIcon"/>
         </div>
-        <div data-id="TextContainer" className={[cardStyles.textContainer,"row"].join(" ")}>
+        <div data-id="TextContainer" className={[cardStyles.textContainer,""].join(" ")}>
           <h5 className={[cardStyles.titleText, ""].join(" ")}>{props.title}</h5>
           <p className={cardStyles.descriptionText}>{props.description}</p>
-          <button className={cardStyles.learnMoreButton}>Learn More</button>
+          {/* <button className={cardStyles.learnMoreButton}>Learn More</button> */}
         </div>
       </div>
   )

@@ -11,24 +11,24 @@
   height: 80vh;
   background-image: url("../../Images/FocusBackground.svg");
   background-size: cover;
-  background-position: top;
+  background-position: center;
 }
 
 /*-----------------Content-----------------*/
 .whoContainer {
-
+  margin-left: 50px;
 }
 
 .whatContainer {
-
+  margin-right: 50px;        
 }
 
 .title {
-
+  font-size: 50px;
 }
 
 .description {
-
+  font-size: 20px;
 }
 
 .titleLine {

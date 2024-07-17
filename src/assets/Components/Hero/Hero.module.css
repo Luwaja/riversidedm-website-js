@@ -18,10 +18,15 @@
 .h1 {
   font-size: 80px;
   font-weight: 800;
+  letter-spacing: -1px;
+  color: white;
+  margin-bottom: 0px;
 }
 
 .p {
   font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .flow {
@@ -51,28 +56,6 @@
   filter: brightness(115%);
 }
 
-.servicesButton {
-  width: 350px;
-  height: 70px;
-
-  background: linear-gradient(94.61deg, #2B6F7E -6.23%, #245A66 102.68%);
-  box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.8);
-  border-radius: 25px;
-  border: none;
-
-  font-weight: 700;
-  font-size: 35px;
-
-  color: #FFFFFF;
-}
-
-.servicesButton:hover {
-  filter: brightness(115%);
-}
-
-.servicesButton_clicked {
-  background: #235b68;
-}
 
 /*Mobile Screen*/
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -84,7 +67,7 @@
     font-size: 24px;
   }
 
-  .contactButton, .servicesButton {
+  .contactButton{
     height: 60px;
     border-radius: 16px;
     font-size: 30px;
@@ -101,7 +84,7 @@
     font-size: 18px;
   }
 
-  .contactButton, .servicesButton {
+  .contactButton {
     height: 50px;
     width: 220px;
     border-radius: 16px;

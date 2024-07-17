@@ -60,6 +60,5 @@
 
 .custom-dots li.slick-active div img {
   content: url('../../Images/HollowCircle.svg');
-  scale: 1.25;
-  padding-bottom: 3px;
+  scale: 1.1;
 }

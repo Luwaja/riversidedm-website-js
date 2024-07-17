@@ -1,0 +1,40 @@
+.container {
+  border: 2px solid #26323B;
+  border-radius: 15px;
+  width: 350px;
+  height: 300px;
+  padding: 22px;
+  margin: 10px;
+  text-align: center;
+}
+
+.iconContainer {
+  background-color: #2B6F7E;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+}
+
+.icon {
+  color: white;
+  scale: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #26323B;
+  padding-top: 25px;
+}
+
+.description {
+  font-size: 18px;
+  font-weight: 500;
+  color: #26323B;
+}

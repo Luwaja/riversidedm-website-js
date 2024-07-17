@@ -3,15 +3,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  filter: drop-shadow(23px 20px 18px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
   background-image: url(../../Images/CardBackground.svg);
   background-size: cover;
   height: 500px;
   width: 400px;
-}
-
-.iconContainer {
-
 }
 
 .icon {
@@ -20,12 +16,13 @@
 }
 
 .textContainer {
-  padding: 0 20px;
+  padding: 0 25px;
+  text-align: center;
 }
 
 .titleText {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 32px;
   color: #FFFFFF;
 }
 
@@ -35,7 +32,7 @@
   color: #FFFFFF;
 }
 
-.learnMoreButton { 
+/* .learnMoreButton { 
   position: absolute;
   width: 153px;
   height: 46px;
@@ -46,7 +43,6 @@
   border-radius: 14px;
   border: none;
 
-  /*Text*/
   font-weight: 700;
   font-size: 20px;
   color: #295461;
@@ -55,12 +51,14 @@
 
 .learnMoreButton:hover {
   filter: brightness(115%);
-}
+} */
 
 /*Tablet Screen*/
-@media screen and (min-width: 576px) and (max-width: 768px) {
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
   .card {
-    
+    height: 400px;
+    width: 320px;
   }
 }
 
@@ -70,5 +68,8 @@
 }
 
 @media screen and (max-width: 376px) {
-  
+  .card {
+    height: 100px;
+    width: 50px;
+  }
 }

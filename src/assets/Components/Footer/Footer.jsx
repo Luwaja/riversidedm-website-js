@@ -13,9 +13,9 @@ const Footer = () => {
           <h5 className={[styles.text,"mb-0"].join(" ")}>© 2023 Riverside Digital Marketing, LLC</h5>
         </div>
         <div className="d-flex col-6 justify-content-end flex-row text-white pe-5">
-          <MdEmail className={[styles.icons, "me-4"].join(" ")}/>
-          <AiFillInstagram className={[styles.icons, "me-4"].join(" ")}/>
-          <FaLinkedin className={[styles.icons, "me-4"].join(" ")}/>
+          <MdEmail className={[styles.icons, "me-sm-4 me-3"].join(" ")}/>
+          <AiFillInstagram className={[styles.icons, "me-sm-4 me-3"].join(" ")}/>
+          <FaLinkedin className={[styles.icons, "me-sm-4 me-3"].join(" ")}/>
         </div>
       </div>
     </div>

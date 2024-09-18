@@ -12,9 +12,9 @@ const HomeAbout = () => {
           <h5 className="fw-bold" style={{color: "#26323B"}}>Learn a little bit</h5>
           <h1 className={styles.aboutUs}>About Us</h1>
         </div>
-        <div data-id="MainContent" className="d-flex flex-column justify-content-center align-items-center ps-5 pe-5">
+        <div data-id="MainContent" className="d-flex flex-column justify-content-center align-items-center pt-5 ps-5 pe-5">
           <div data-id="HistoryContainer" className="d-flex flex-row col-lg-6 col-md-10 col-sm-12 align-items-center">
-            <div data-id="HistoryImage" className={styles.backBox}>
+            <div data-id="HistoryImage" className={[styles.backBox, ""].join(" ")}>
               <div className={[styles.frontBox, "mt-2 ms-2"].join(" ")}>
                 <FaScroll className={styles.boxIcon}/>
               </div>
@@ -31,7 +31,7 @@ const HomeAbout = () => {
               <h5 className={styles.ourTitle}>Our Focus</h5>
               <p className={[styles.ourDescription, "text-end"].join(" ")}>Riverside Digital Marketing focuses on helping small businesses build an online presence. We craft custom websites, enhance search engine optimization, and create engaging content specific to each client&apos;s needs. By implementing personalized strategies with industry best practices, we aim to drive growth, increase visibility, and foster meaningful connections between businesses and their customers.</p>
             </div>
-            <div data-id="FocusImage" className={styles.backBox}>
+            <div data-id="FocusImage" className={[styles.backBox,].join(" ")}>
               <div className={[styles.frontBox, "mt-2 ms-2"].join(" ")}>
                 <GiBullseye className={styles.boxIcon}/>
               </div>

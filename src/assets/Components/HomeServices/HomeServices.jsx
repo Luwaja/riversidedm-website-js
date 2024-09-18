@@ -12,9 +12,9 @@ import { HiClipboardDocumentList } from "react-icons/hi2";
 const HomeServices = () => {
   return (
     <div data-id="services container" className="d-flex flex-column justify-content-center align-items-center">
-      <h5 className="pt-5 fw-bold fs-4">Get Started With</h5>
+      <h5 className="pt-5 fw-bold fs-5">Get Started With</h5>
       <h1 className="" style={{color: "#2B6F7E", fontWeight: "800"}}>Our Services</h1>
-      <h5 className="p-4 ps-5 pe-5 text-center">Looking to jumpstart your business? Choose the features that work best for you, and we can make it happen.</h5>
+      <h5 className="p-4 ps-5 pe-5 text-center">Looking to jump start your business? Choose the features that work best for you, and we can make it happen.</h5>
       <div className="container col-12 justify-content-center align-items-center">
         <div className="row ps-3 pe-3 justify-content-center">
           <Card

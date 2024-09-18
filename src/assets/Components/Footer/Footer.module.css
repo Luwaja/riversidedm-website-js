@@ -21,3 +21,14 @@
   color: #5CEAA9;
   transition: color 0.25s;
 }
+
+/*Mobile Screen*/
+@media screen and (max-width: 576px) {
+  .text {
+    font-size: 12px;
+  }
+
+  .icons {
+    scale: 1.5;
+  }
+}

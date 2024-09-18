@@ -1,5 +1,5 @@
 .container {
-
+  margin: 80px;
 }
 
 .aboutUs {
@@ -33,12 +33,14 @@
 
 .ourTitle {
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 700;
+  color: #2B6F7E;
 }
 
 .ourDescription {
   font-size: 16px;
   font-weight: 400;
+  color: #26323B;
 }
 
 .button {

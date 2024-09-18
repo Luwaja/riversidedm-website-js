@@ -9,10 +9,10 @@ const HomeAbout = () => {
     <div className={[styles.container, "d-flex justify-content-center"].join(" ")}>
       <div className="justify-content-center">
         <div className="justify-content-center text-center">
-          <h5 className="fw-bold">Learn a little bit</h5>
+          <h5 className="fw-bold" style={{color: "#26323B"}}>Learn a little bit</h5>
           <h1 className={styles.aboutUs}>About Us</h1>
         </div>
-        <div data-id="MainContent" className="d-flex flex-column mt-5 justify-content-center align-items-center ps-5 pe-5">
+        <div data-id="MainContent" className="d-flex flex-column justify-content-center align-items-center ps-5 pe-5">
           <div data-id="HistoryContainer" className="d-flex flex-row col-lg-6 col-md-10 col-sm-12 align-items-center">
             <div data-id="HistoryImage" className={styles.backBox}>
               <div className={[styles.frontBox, "mt-2 ms-2"].join(" ")}>
@@ -29,7 +29,7 @@ const HomeAbout = () => {
           <div data-id="FocusContainer" className="d-flex flex-row mt-5 col-lg-6 col-md-10 col-sm-12 align-items-center">
             <div className="d-flex flex-column me-5 text-end">
               <h5 className={styles.ourTitle}>Our Focus</h5>
-              <p className={styles.ourDescription}>Riverside Digital Marketing focuses on helping small businesses build an online presence. We craft custom websites, enhance search engine optimization, and create engaging content specific to each client&apos;s needs. By implementing personalized strategies with industry best practices, we aim to drive growth, increase visibility, and foster meaningful connections between businesses and their customers.</p>
+              <p className={[styles.ourDescription, "text-end"].join(" ")}>Riverside Digital Marketing focuses on helping small businesses build an online presence. We craft custom websites, enhance search engine optimization, and create engaging content specific to each client&apos;s needs. By implementing personalized strategies with industry best practices, we aim to drive growth, increase visibility, and foster meaningful connections between businesses and their customers.</p>
             </div>
             <div data-id="FocusImage" className={styles.backBox}>
               <div className={[styles.frontBox, "mt-2 ms-2"].join(" ")}>
@@ -49,7 +49,7 @@ const HomeAbout = () => {
               <p className={styles.ourDescription}>Riverside Digital Marketing wants to help small businesses by providing exceptional digital marketing services that drive online growth. Our ultimate goal is to empower businesses to achieve measurable results, increase their market reach, and build lasting customer relationships in the digital world.</p>
             </div>
           </div>
-          <button className={[styles.button, "mt-5"].join(" ")}>Learn More</button>
+          {/* <button className={[styles.button, "mt-5"].join(" ")}>Learn More</button> */}
         </div>
       </div>
       

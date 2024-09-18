@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import styles from "./HomeServices.module.css"
 import Card from "./Card/Card"
 import { HiPaintBrush } from "react-icons/hi2";
@@ -50,7 +51,11 @@ const HomeServices = () => {
           />
         </div>
       </div>
-      <button className={[styles.button].join(" ")}>Learn More</button>
+      <Link to="/services">
+        <button className={[styles.button].join(" ")}>
+          Learn More
+        </button>
+      </Link>
     </div>
   )
 }

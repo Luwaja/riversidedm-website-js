@@ -1,5 +1,3 @@
-import React from 'react'
-import appStyles from "../App.module.css"
 import Hero from "../assets/Components/Hero/Hero"
 import HomeServices from "../assets/Components/HomeServices/HomeServices"
 import HomeTestimonials from "../assets/Components/HomeTestimonials/HomeTestimonials"

@@ -1,5 +1,5 @@
 .container {
-  border: 2px solid #26323B;
+  border: 3px solid #26323B;
   border-radius: 15px;
   width: 350px;
   height: 300px;
@@ -29,12 +29,12 @@
 .title {
   font-size: 26px;
   font-weight: 700;
-  color: #26323B;
+  color: #2B6F7E;
   padding-top: 25px;
 }
 
 .description {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   color: #26323B;
 }

@@ -1,0 +1,67 @@
+.container {
+  margin: 80px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2B6F7E;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.line {
+  width: 35px;
+  height: 2px;
+  border: solid 3px #26323B;
+  border-radius: 15px;
+  margin-top: -40px;
+}
+
+.serviceContainer {
+  height: 200px;
+  width: 180px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.serviceImageContainer {
+  flex-grow: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%; 
+}
+
+.serviceTitleContainer {
+  height: 20%; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.serviceIcon {
+  scale: 0.6;
+  transition: filter 0.25s;
+}
+
+.serviceIcon:hover {
+  filter: brightness(120%);
+  transition: filter 0.25s;
+}
+
+.serviceIconActive {
+  filter: brightness(120%);
+}
+
+.serviceTitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #26323B;
+}
+
+.popUpContainer {
+  width: 100%;
+  margin-top: 80px;
+}

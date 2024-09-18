@@ -9,7 +9,7 @@
 
 .services {
   font-weight: 600;
-  color: rgb(167, 167, 167);
+  color: rgb(167, 167, 167) !important;
 }
 
 .textContainer {
@@ -27,7 +27,7 @@
 }
 
 .dropdownContainer a:hover {
-  color: #5CEAA9;
+  color: #5CEAA9 !important;
   cursor: pointer;
 }
 

@@ -2,8 +2,40 @@
   color: #2B6F7E;
   font-size: 32px;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .description {
   font-size: 16px;
+  padding-right: 40px;
+}
+
+.iconContainer {
+
+}
+
+.icon {
+
+}
+
+/*Tablet Screen*/
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .description {
+    padding-right: 0px;
+  }
+  
+  .iconContainer {
+    justify-content: center;
+  }
+}
+
+/*Mobile Screen*/
+@media screen and (max-width: 576px) {
+  .description {
+    padding-right: 0px;
+  }
+  
+  .iconContainer {
+    justify-content: center;
+  }
 }

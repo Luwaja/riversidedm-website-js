@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { useLocation } from "react-router-dom"
 import styles from "./ServicesSelection.module.css"
 import WDDIconDark from "../../Images/Icons/Dark/WDDIconDark.svg"
 import SEOIconDark from "../../Images/Icons/Dark/SEOIconDark.svg"
@@ -9,7 +10,20 @@ import CCIconDark from "../../Images/Icons/Dark/CCIconDark.svg"
 import ServicePopUp from "./ServicePopUp/ServicePopUp"
 
 const ServicesSelection = () => {
+  const location = useLocation();
   const [activeIcon, setActiveIcon] = useState('WDD');
+
+  useEffect(() => {
+    console.log("Location state:", location.state);
+    let activeService = location.state?.activeService;
+    if (!activeService) {
+      activeService = sessionStorage.getItem('activeService');
+    } 
+    if (activeService) {
+      setActiveIcon(activeService);
+      sessionStorage.removeItem('activeService');
+    }
+  }, [location.state]);
 
   const handleIconClick = (icon) => {
     setActiveIcon(icon);
@@ -18,11 +32,15 @@ const ServicesSelection = () => {
   return (
     <div className={[styles.container, ""].join(" ")}>
       
-      <h1 className={[styles.title, "justify-content-center"].join(" ")}>Click on a service to learn more</h1>
+      <div className="d-flex justify-content-center">
+        <h1 className={[styles.title, "d-flex col-10 justify-content-center"].join(" ")}>
+          Learn more about our services
+        </h1>
+      </div> 
       
       <div>
         {/* Web Design and Development */}
-        <div className="d-flex flex-row align-items-center justify-content-center">
+        <div className="d-flex flex-md-row flex-column align-items-center justify-content-center ps-2 pe-2">
           <div className={[styles.serviceContainer, "d-flex flex-column align-items-center"].join(" ")}>
             <div className={styles.serviceImageContainer}>
               <img 
@@ -102,10 +120,11 @@ const ServicesSelection = () => {
       </div>
 
       {/* ============== POP UPS ============== */}
-      <div className={[styles.popUpContainer, "d-flex flex-column justify-content-center align-items-center"].join(" ")}>
+      <div id="services" className={[styles.popUpContainer, "d-flex flex-column justify-content-center align-items-center"].join(" ")}>
         
         {activeIcon === 'WDD' && (
-          <ServicePopUp 
+          <ServicePopUp
+          id="web-design-development" 
           icon={WDDIconDark} 
           title="Web Design and Development" 
           description={
@@ -127,7 +146,8 @@ const ServicesSelection = () => {
         )}
 
         {activeIcon === 'SEO' && (
-          <ServicePopUp 
+          <ServicePopUp
+          id="search-engine-optimization" 
           icon={SEOIconDark} 
           title="Search Engine Optimization" 
           description={
@@ -149,24 +169,26 @@ const ServicesSelection = () => {
         )}
 
         {activeIcon === 'OA' && (
-          <ServicePopUp 
+          <ServicePopUp
+          id="online-advertising" 
           icon={OAIconDark} 
           title="Online Advertising" 
           description={<p>Online advertising provides an exceptional opportunity for businesses to reach their target audience and maximize visibility in a competitive market.
           <br/><br/>
           Online Advertising Services we offer:
           <br/><br/>
-          ★ Strategic development of tailored advertising campaigns <br/>
-          ★ Precise targeting across various digital platforms <br/>
-          ★ Ongoing performance analysis and optimization <br/>
-          ★ Effective budget management to ensure maximum ROI
+          • Strategic development of tailored advertising campaigns <br/>
+          • Precise targeting across various digital platforms <br/>
+          • Ongoing performance analysis and optimization <br/>
+          • Effective budget management to ensure maximum ROI
           <br/><br/>
           This well-rounded approach boosts brand exposure, generates high-quality leads, and drives measurable results for your business.</p>}
           />
         )}
 
         {activeIcon === 'SMM' && (
-          <ServicePopUp 
+          <ServicePopUp
+          id="social-media-management" 
           icon={SMMIconDark} 
           title="Social Media Management" 
           description={
@@ -187,9 +209,10 @@ const ServicesSelection = () => {
         )}
 
         {activeIcon === 'CC' && (
-          <ServicePopUp 
+          <ServicePopUp
+          id="content-creation" 
           icon={CCIconDark} 
-          title="Content Creation" 
+          title="Content Creation and Management" 
           description={
             <p>
               Creating valuable content is essential in establishing a strong online presence.

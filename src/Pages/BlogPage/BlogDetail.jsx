@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 // import { datetimeToObject } from '../components/Helpers';
-import Sidebar from '../components/Sidebar/Sidebar';
+import Sidebar from '../../assets/Components/Sidebar/Sidebar';
 import './Blog.css'
 
 const BlogDetail = () => {

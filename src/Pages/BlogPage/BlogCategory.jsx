@@ -1,21 +1,17 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link, useParams } from 'react-router-dom';
-import { yearMonthToReadableString } from '../../assets/Components/Helpers';
 import Sidebar from '../../assets/Components/Sidebar/Sidebar';
 import './Blog.css'
 
-const BlogArchive = () => {
+const BlogCategory = () => {
     const [blogs, setBlogs] = useState([]);
-    const [currentMonth, setCurrentMonth] = useState('');
-    const [currentYear, setCurrentYear] = useState('');
-    const { year, month } = useParams();
+    const [currentCategory, setCurrentCategory] = useState('');
+    const { id } = useParams();
 
     useEffect(() => {
-        const y = year === undefined ? '' : year;
-        const m = month === undefined ? '' : month;
-        setCurrentYear(y);
-        setCurrentMonth(m);
+        const category = id === undefined ? '' : id;
+        setCurrentCategory(capitalizeFirstLetter(category));
 
         // const config = {
         //     headers: {
@@ -25,16 +21,16 @@ const BlogArchive = () => {
 
         const fetchData = async () => {
             try {
-                const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/blog?y=${y}&m=${m}`);
+                const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/blog?category=${category}`);
                 setBlogs(res.data);
             }
             catch (err) {
-                //Error?
+              // Error?
             }
         };
 
     fetchData();
-    }, [month, year]);
+    }, [id]);
 
     const capitalizeFirstLetter = (word) => {
         if (word)
@@ -42,7 +38,7 @@ const BlogArchive = () => {
         return '';
     }
 
-    const getArchiveBlogs = () => {
+    const getCategoryBlogs = () => {
         let list = [];
         let result = [];
 
@@ -66,7 +62,7 @@ const BlogArchive = () => {
 
         for (let i = 0; i < list.length; i++) {
             result.push(
-                <div key={`archivecard_${i}`} className='row mb-2'>
+                <div key={`categorycard_${i}`} className='row mb-2'>
                     <div className='col'>
                         {list[i]}
                     </div>
@@ -83,11 +79,11 @@ const BlogArchive = () => {
     return (
         <div className='container mt-3'>
             <div className='border-bottom py-1 mb-3'>
-                <h3 className='display-4 text-center'>{yearMonthToReadableString(currentYear, currentMonth)}</h3>
+                <h3 className='display-4 text-center'>{currentCategory} Category</h3>
             </div>
             <div className="row g-5">
                 <div className='col-md-8'>
-                    {getArchiveBlogs()}
+                    {getCategoryBlogs()}
                 </div>
                 <div className="col-md-4">
                     {Sidebar()}
@@ -97,4 +93,4 @@ const BlogArchive = () => {
     )
 };
 
-export default BlogArchive;
+export default BlogCategory;

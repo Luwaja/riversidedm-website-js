@@ -1,10 +1,15 @@
 .container {
-  margin: 80px;
+  margin: 80px 0px;
+  width: 100%;
 }
 
 .aboutUs {
   color: #2B6F7E;
   font-weight: 800;
+}
+
+.iconContainer {
+
 }
 
 .backBox {
@@ -60,7 +65,24 @@
 }
 
 
+/*Tablet Screen*/
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .container {
+    margin: 0px 0px;
+  }
+
+  .iconContainer {
+    margin-bottom: 50px;
+  }
+}
+
 /*Mobile Screen*/
 @media screen and (max-width: 576px) {
+  .container {
+    margin: 0px 0px;
+  }
   
+  .iconContainer {
+    margin-bottom: 30px;
+  }
 }

@@ -5,7 +5,7 @@ import HomeQuote from "../assets/Components/HomeQuote/HomeQuote"
 import HomeAbout from "../assets/Components/HomeAbout/HomeAbout"
 
 
-const Landing = () => {
+const HomePage = () => {
   return (
     <div>
       <Hero/>
@@ -17,4 +17,4 @@ const Landing = () => {
   )
 }
 
-export default Landing
+export default HomePage

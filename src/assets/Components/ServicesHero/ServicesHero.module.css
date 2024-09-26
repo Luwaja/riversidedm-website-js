@@ -10,7 +10,7 @@
   margin-top: -1px;
   width: 100%;
   height: 90vh;
-  background-image: url(../../Images/WaterImage.jpg);
+  background-image: url(../../Images/HeroBackgrounds/ServiceHeroBackground.png);
   background-size: cover;
   background-position: bottom;
 }
@@ -50,10 +50,13 @@
   font-size: 35px;
 
   color: #26323B;
+
+  transition: filter 0.25s;
 }
 
 .contactButton:hover {
   filter: brightness(115%);
+  transition: filter 0.25s;
 }
 
 /*Tablet Screen*/
@@ -84,8 +87,8 @@
 /*Mobile Screen*/
 @media screen and (max-width: 576px) {
   .h1 {
-    font-size: 36px;
-    font-weight: 700;
+    font-size: 40px;
+    font-weight: 800;
   }
 
   .p {
@@ -95,16 +98,17 @@
 
   .contactButton {
     height: 50px;
-    width: 180px;
+    width: 250px;
     border-radius: 16px;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 800;
   }
 
   .heroContainer {
-    height: 70vh;
+    height: 80vh;
   }
 
   .backgroundContainer {
-    height: 70vh;
+    height: 80vh;
   }
 }

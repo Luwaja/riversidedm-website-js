@@ -8,7 +8,7 @@ import { HiMenu } from "react-icons/hi";
 import { HiMail } from "react-icons/hi";
 import MobileDropdown from "../MobileDropdown/MobileDropdown";
 
-const NavBar = () => {
+const Navbar = () => {
   const [activeLink, setActiveLink] = useState("/");
   const [showDropdown, setShowDropdown] = useState(false);
   const [showMobileDropdown, setShowMobileDropdown] = useState(false);
@@ -17,6 +17,8 @@ const NavBar = () => {
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
+    setShowMobileDropdown(false);
+    setShowDropdown(false);
   };
 
   const handleMouseEnter = () => {
@@ -90,7 +92,7 @@ const NavBar = () => {
                   Services <HiChevronDown className={navbarStyles.services_arrow}/>
               </NavLink>
               <div className={[navbarStyles.dropdown, "d-flex justify-content-center"].join(" ")}>
-                {showDropdown && <Dropdown/>}
+                {showDropdown && <Dropdown handleLinkClick={handleLinkClick}/>}
               </div>
             </div>
           </li>
@@ -126,10 +128,10 @@ const NavBar = () => {
       </nav>
 
       <div data-id="MobileDropdown" className={[navbarStyles.mobileDropdown, "d-lg-none"].join(" ")}>
-        {showMobileDropdown && <MobileDropdown />}
+        {showMobileDropdown && <MobileDropdown handleLinkClick={handleLinkClick}/>}
       </div>
     </div>
   )
 }
 
-export default NavBar
+export default Navbar

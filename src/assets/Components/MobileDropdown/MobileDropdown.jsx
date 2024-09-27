@@ -5,7 +5,7 @@ import mobileDropdownStyles from "./MobileDropdown.module.css"
 import { HiChevronDown } from "react-icons/hi";
 import MobileServices from "./MobileServices/MobileServices";
 
-const MobileDropdown = ({ handleLinkClick }) => {
+const MobileDropdown = ({ handleLinkClick: mobileLinkClick }) => {
   const [showServices, setShowServices] = useState(false);
 
   const handleServicesClick = () => {
@@ -18,7 +18,7 @@ const MobileDropdown = ({ handleLinkClick }) => {
           
           <NavLink to="/"
           className={["d-flex justify-content-center align-items-center p-3"].join(" ")}
-          onClick={() => handleLinkClick("/")}>
+          onClick={() => mobileLinkClick("/")}>
             Home
           </NavLink>
           
@@ -27,13 +27,13 @@ const MobileDropdown = ({ handleLinkClick }) => {
             onClick={handleServicesClick}>
               &nbsp;&nbsp;&nbsp;&nbsp;Services <HiChevronDown/>
             </NavLink>
-            {showServices && <MobileServices handleLinkClick={handleLinkClick}/>}
+            {showServices && <MobileServices handleLinkClick={mobileLinkClick}/>}
           </div>
 
           <NavLink to="/blog" 
           className={["d-flex justify-content-center align-items-center p-3"].join(" ")} 
           style={{borderBottom: "solid #1e282f 3px"}}
-          onClick={() => handleLinkClick("/blog")}>
+          onClick={() => mobileLinkClick("/blog")}>
             Blog
           </NavLink>
 

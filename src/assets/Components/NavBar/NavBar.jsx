@@ -63,13 +63,13 @@ const Navbar = () => {
             <HiMenu className={[navbarStyles.mobileIcon, ""].join(" ")} onClick={handleMenuClick}/>
           </div>
         <div className="d-flex col-6 col-lg-3 justify-content-center justify-content-lg-end">
-          <a href="/">
+          <NavLink to="/">
             <img
               src={NavLogo}
               alt="Logo"
               className={[navbarStyles.navLogo].join(" ")}
             />
-          </a>
+          </NavLink>
         </div>
         <ul className={[navbarStyles.menuItemsContainer, "col-6 d-lg-flex justify-content-lg-center mx-lg-5 d-none"].join(" ")}>
           <li>

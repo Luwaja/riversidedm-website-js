@@ -2,13 +2,9 @@ import React from 'react'
 import { NavLink, useNavigate } from "react-router-dom";
 import PropTypes from "prop-types"
 import dropdownStyles from "./Dropdown.module.css"
-import { HiComputerDesktop } from "react-icons/hi2";
-import { HiMagnifyingGlassCircle } from "react-icons/hi2";
-import { HiChatBubbleLeftRight } from "react-icons/hi2";
-import { HiClipboardDocumentList } from "react-icons/hi2";
-import { HiGlobeAlt } from "react-icons/hi2";
+import { HiComputerDesktop, HiMagnifyingGlassCircle, HiChatBubbleLeftRight, HiClipboardDocumentList, HiGlobeAlt } from "react-icons/hi2";
 
-const Dropdown = ({ handleLinkClick }) => {
+const Dropdown = ({ handleLinkClick: dropdownLinkClick }) => {
   const navigate = useNavigate();
 
   const handleNavigate = (service) => {
@@ -32,19 +28,19 @@ const Dropdown = ({ handleLinkClick }) => {
         <NavLink to="/services" className={[dropdownStyles.services, "mb-1"].join(" ")} >
           All Services
         </NavLink>
-        <NavLink to="/services" onClick={() => {handleLinkClick("/services"); handleNavigate("WDD"); scrollToSection("services"); }}>
+        <NavLink to="/services" onClick={() => {dropdownLinkClick("/services"); handleNavigate("WDD"); scrollToSection("services"); }}>
           <HiComputerDesktop/>&nbsp; Website Design/Development
         </NavLink>
-        <NavLink to="/services" onClick={() => {handleLinkClick("/services"); handleNavigate("SEO"); scrollToSection("services"); }}>
+        <NavLink to="/services" onClick={() => {dropdownLinkClick("/services"); handleNavigate("SEO"); scrollToSection("services"); }}>
           <HiMagnifyingGlassCircle />&nbsp; Search Engine Optimization
         </NavLink>
-        <NavLink to="/services" onClick={() => {handleLinkClick("/services"); handleNavigate("SMM"); scrollToSection("services"); }}>
+        <NavLink to="/services" onClick={() => {dropdownLinkClick("/services"); handleNavigate("SMM"); scrollToSection("services"); }}>
           <HiChatBubbleLeftRight />&nbsp; Social Media Management
         </NavLink>
-        <NavLink to="/services" onClick={() => {handleLinkClick("/services"); handleNavigate("CC"); scrollToSection("services"); }}>
+        <NavLink to="/services" onClick={() => {dropdownLinkClick("/services"); handleNavigate("CC"); scrollToSection("services"); }}>
           <HiClipboardDocumentList />&nbsp; Content Creation/Management
         </NavLink>
-        <NavLink to="/services" onClick={() => {handleLinkClick("/services"); handleNavigate("OA"); scrollToSection("services"); }}>
+        <NavLink to="/services" onClick={() => {dropdownLinkClick("/services"); handleNavigate("OA"); scrollToSection("services"); }}>
           <HiGlobeAlt />&nbsp; Online Advertising
         </NavLink>
       </div>
